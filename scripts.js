@@ -15,9 +15,14 @@ function productsLoop(product){
     newProduct += `<p>${currentProduct.name}</p>`;
     newProduct += `<p>${currentProduct.price}</p>`;
     newProduct += `</div></div></div>`;
+    for(var y=0;y<product.categories.length;y++){
+      currentCategory = product.categories[y];
+      console.log(product.categories[y]);
+    }
   }
   productOutput.innerHTML = newProduct;
 }
+
 
 
 
